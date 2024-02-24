@@ -4,15 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
-            "type": "node",
+            "name": "F5 Anything: My Custom Command",
+            "type": "f5anything",
             "request": "launch",
-            "name": "launch program",
-            "skipFiles": [ "<node_internals>/**"],
-            "preLaunchTask": "myShellCommand",
-            "program": "${workspaceFolder}/gitHello.swift"
-          }
-
+            "command": "swift ${file}",
+        }
     ]
 }
