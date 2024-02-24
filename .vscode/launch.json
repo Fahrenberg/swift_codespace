@@ -6,12 +6,13 @@
     "configurations": [
 
         {
-            "type": "lldb",
+            "type": "node",
             "request": "launch",
-            "name": "Debug",
-            "program": "${workspaceFolder}/gitHello.swift",
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        }
+            "name": "launch program",
+            "skipFiles": [ "<node_internals>/**"],
+            "preLaunchTask": "myShellCommand",
+            "program": "${workspaceFolder}/gitHello.swift"
+          }
+
     ]
 }
